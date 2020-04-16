@@ -1,11 +1,10 @@
-require 'pry'
+
 def square_array(array)
   counter = 0
-
+  new_array = []
   while counter < array.length do
-    array[counter] * array[counter]
+    new_array << [counter] * array[counter]
     counter += 1
   end
-  array
-  binding.pry
+  new_array
 end
